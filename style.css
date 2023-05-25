@@ -1,0 +1,115 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	overflow: hidden;
+}
+
+
+.container{
+	background: red;
+
+}
+
+.building{
+	width: 100%;
+	height: 100vh;
+	background: url('img/bg.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+
+
+}
+
+.track{
+	width: 800vh;
+	background: url('img/track.png') repeat-x;
+/*	background-size: cover;*/
+	height: 25vh;
+	position: absolute;
+	bottom: 0;
+	animation: track linear 1s infinite;
+}
+
+.car{
+	width: 55vw;
+	background: bLack;
+	background: url('img/carnew.png') no-repeat;
+	background-size: contain;
+	position: absolute;
+	bottom: 12vh;
+	left: -80vw;
+	animation: shake linear 10s infinite;
+	transition: all 0.5s ease-out;
+	animation: move linear 6s infinite;
+}
+
+.wheel{
+	position: relative;
+	
+/*	background: red;*/
+}
+
+.left{
+	left: 28vw;
+	top: 21vh;
+
+
+
+}
+
+.left img{
+		animation: wheel360 linear 0.19s infinite;
+}
+
+.right{
+	left: -2vw;
+	top: -3vh;
+
+
+}
+
+.right img{
+		animation: wheel360 linear .19s infinite;
+}
+
+
+@keyframes move{
+	0%{
+		transform: translateX(100px);
+
+	}
+	100%{
+		transform: translateX(2400px);
+
+	}
+}
+
+@keyframes shake{
+	0%{
+		transform: translateY(-20px);
+	}
+	50%{
+		transform: translateY(0px);
+	}
+	100%{
+		transform: translateY(20px);
+	}
+}
+
+@keyframes wheel360{
+	100%{
+		transform: rotateZ(360deg);
+	}
+}
+
+@keyframes track{
+	100%{
+		transform: translate(-500vh);
+}
+
+
