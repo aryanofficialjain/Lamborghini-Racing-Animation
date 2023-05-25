@@ -39,10 +39,11 @@ body{
 	width: 55vw;
 	background: bLack;
 	background: url('img/carnew.png') no-repeat;
-	background-size: contain;
+	background-size: 300px;
 	position: absolute;
-	bottom: 12vh;
-	left: -80vw;
+	bottom: 17vh;
+	left: -40vw;
+/*	left: 10vw;*/
 	animation: shake linear 10s infinite;
 	transition: all 0.5s ease-out;
 	animation: move linear 6s infinite;
@@ -55,8 +56,8 @@ body{
 }
 
 .left{
-	left: 28vw;
-	top: 21vh;
+	left: 11.5vw;
+	top: 9vh;
 
 
 
@@ -67,7 +68,7 @@ body{
 }
 
 .right{
-	left: -2vw;
+	left: -1vw;
 	top: -3vh;
 
 
