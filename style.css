@@ -23,12 +23,13 @@ body{
 	position: absolute;
 
 
+
 }
 
 .track{
 	width: 800vh;
 	background: url('img/track.png') repeat-x;
-/*	background-size: cover;*/
+	background-size: contain;
 	height: 25vh;
 	position: absolute;
 	bottom: 0;
@@ -60,7 +61,6 @@ body{
 	top: 9vh;
 
 
-
 }
 
 .left img{
@@ -77,6 +77,51 @@ body{
 .right img{
 		animation: wheel360 linear .19s infinite;
 }
+
+
+
+
+.bcar{
+	width: 55vw;
+	background: bLack;
+	background: url('img/carnew2.png') no-repeat;
+	background-size: 400px;
+	position: absolute;
+	bottom: -24vh;
+	left: -50vw;
+/*	left: 10vw;*/
+	animation: shake linear 10s infinite;
+	transition: all 0.5s ease-out;
+	animation: move linear 6s infinite;
+}
+
+
+
+.b-left{
+	left: 12.5vw;
+	top: 7.5vh;
+
+
+}
+
+.b-left img{
+		animation: wheel360 linear 0.19s infinite;
+}
+
+.b-right{
+	left: -1.1vw;
+	top: -8vh;
+
+
+}
+
+.b-right img{
+		animation: wheel360 linear .19s infinite;
+}
+
+
+
+
 
 
 @keyframes move{
